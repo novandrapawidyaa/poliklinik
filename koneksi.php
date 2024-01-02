@@ -1,14 +1,12 @@
-<?php
+<?php 
 $databaseHost = 'localhost';
-$databaseName = 'poli';
+$databaseName = 'poli_bk';
 $databaseUsername = 'root';
 $databasePassword = '';
+ 
+$mysqli = mysqli_connect($databaseHost,$databaseUsername, $databasePassword, $databaseName);
 
-$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
-
-//cek koneksi
+// Periksa koneksi
 if (!$mysqli) {
-    die("koneksi gagal: " . mysqli_connect_error());
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
-
-?>

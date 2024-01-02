@@ -1,24 +1,54 @@
 <?php
 session_start();
 
-// Memeriksa apakah ada sesi user_id dan role yang tersimpan
-if (isset($_SESSION['user_id']) && isset($_SESSION['role'])) {
-    $role = $_SESSION['role'];
+// Mendapatkan role dari session atau dari tempat lain sesuai kebutuhan
+if (isset($_SESSION['role_id'])) {
+    $role = $_SESSION['role_id'];
 
-    // Redirect ke halaman sesuai dengan peran (role) pengguna
-    if ($role === 'admin') {
-        header('Location: dashboard/dashboard_admin.php');
-        exit();
-    } elseif ($role === 'dokter') {
-        header('Location: dashboard_dokter.php');
-        exit();
-    } elseif ($role === 'pasien') {
-        header('Location: dashboard_pasien.php');
-        exit();
+    // Tentukan file sidebar yang akan dimuat berdasarkan role
+    if ($role === 1) {
+        $sidebar_file = 'components/sidebar_admin.php';
+    } elseif ($role === 2) {
+        $sidebar_file = 'components/sidebar_dokter.php';
+    } else {
+        // Atur default jika $_SESSION['role_id'] tidak terdefinisi atau tidak sesuai
+        $sidebar_file = 'components/sidebar_pasien.php';
     }
 } else {
-    // Jika tidak ada sesi, kembalikan ke halaman login atau halaman lain yang sesuai
-    header('Location: login.php');
-    exit();
+    // Atur default jika $_SESSION['role_id'] belum terdefinisi
+    $sidebar_file = 'components/sidebar_pasien.php';
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php include('components/head.php'); ?>
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <!-- Navbar -->
+    <?php include('components/navbar.php'); ?>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <?php include($sidebar_file); ?>
+    <!-- /.sidebar -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <?php include('pages/home.php'); ?>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <?php include('components/footer.php'); ?>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- ... -->
+</body>
+</html>
