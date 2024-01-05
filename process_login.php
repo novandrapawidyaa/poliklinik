@@ -46,15 +46,15 @@ if (mysqli_num_rows($result) == 1) {
     switch ($role) {
         case '1':
             $redirect_url = 'dashboard.php';
-            $welcomeMessage = 'Selamat datang, Admin ' . ucfirst($row['nama']) . '!';
+            $welcomeMessage = 'Selamat Datang, Admin ' . ucfirst($row['nama']) . '!';
             break;
         case '2':
             $redirect_url = 'dashboard.php';
-            $welcomeMessage = 'Selamat datang, Dokter ' . ucfirst($row['nama']) . '!';
+            $welcomeMessage = 'Selamat Datang, Dokter ' . ucfirst($row['nama']) . '!';
             break;
         case '3':
             $redirect_url = 'dashboard.php';
-            $welcomeMessage = 'Selamat datang, Pasien ' . ucfirst($row['nama']) . '!';
+            $welcomeMessage = 'Selamat Datang, ' . ucfirst($row['nama']) . '!';
             break;
         default:
             $redirect_url = 'default.php'; // URL default jika role tidak ditemukan

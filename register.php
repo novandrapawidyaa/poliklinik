@@ -97,7 +97,7 @@
         .login-form button {
             width: 100%;
             padding: 10px;
-            background-color: #3498db;
+            background-color: #1ac5ff;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -110,7 +110,7 @@
         }
 
         .register-link a {
-            color: #3498db;
+            color: #1ac5ff;
             text-decoration: none;
         }
     </style>
@@ -119,7 +119,7 @@
 <body>
     <div class="login-container">
         <div class="left-container">
-            <img src="assets/images/hospital.png" alt="Login Image">
+            <img src="assets/images/hospital.jpg" alt="Login Image">
         </div>
         <div class="right-container">
             <div class="login-form">

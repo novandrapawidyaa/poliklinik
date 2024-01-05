@@ -8,11 +8,14 @@ if (isset($_SESSION['role_id'])) {
     // Tentukan file sidebar yang akan dimuat berdasarkan role
     if ($role === 1) {
         $sidebar_file = 'components/sidebar_admin.php';
+        $home_file = 'pages/home_admin.php';
     } elseif ($role === 2) {
         $sidebar_file = 'components/sidebar_dokter.php';
+        $home_file = 'pages/home_dokter.php';
     } else {
         // Atur default jika $_SESSION['role_id'] tidak terdefinisi atau tidak sesuai
         $sidebar_file = 'components/sidebar_pasien.php';
+        $home_file = 'pages/home_pasien.php';
     }
 } else {
     // Atur default jika $_SESSION['role_id'] belum terdefinisi
@@ -38,7 +41,7 @@ if (isset($_SESSION['role_id'])) {
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Main content -->
-        <?php include('pages/home.php'); ?>
+        <?php include($home_file); ?>
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->

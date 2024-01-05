@@ -15,7 +15,7 @@ $nama = $_SESSION['nama']; // Ambil nama dari session
         <!-- Brand Logo -->
         <a href="dashboard.php" class="brand-link">
       <img src="asset/images/logo_dinus.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Poliklinik Udinus</span>
+      <span class="brand-text font-weight-light">Udinus Poliklinik</span>
     </a>
 
     <!-- Sidebar -->
@@ -48,31 +48,31 @@ $nama = $_SESSION['nama']; // Ambil nama dari session
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Menampilkan menu khusus dokter -->
             <li class="nav-item">
-                <a href="index.php?page=periksa" class="nav-link">
+                <a href="dashboard.php" class="nav-link">
                     <i class="nav-icon fas fa-notes-medical"></i>
                     <p>Dashboard</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="index.php?page=periksa" class="nav-link">
+                <a href="home_jadwal_periksa.php" class="nav-link">
                     <i class="nav-icon fas fa-notes-medical"></i>
                     <p>Jadwal Periksa</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="index.php?page=riwayatpasien" class="nav-link">
+                <a href="home_periksa.php" class="nav-link">
                     <i class="nav-icon fas fa-history"></i>
                     <p>Memeriksa Pasien</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="index.php?page=riwayatpasien" class="nav-link">
+                <a href="home_riwayat_pasien.php" class="nav-link">
                     <i class="nav-icon fas fa-history"></i>
                     <p>Riwayat Pasien</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="index.php?page=riwayatpasien" class="nav-link">
+                <a href="home_profile.php" class="nav-link">
                     <i class="nav-icon fas fa-history"></i>
                     <p>Profile</p>
                 </a>

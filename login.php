@@ -76,7 +76,7 @@
         .login-form button {
             width: 100%;
             padding: 10px;
-            background-color: #3498db;
+            background-color: #1ac5ff;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -89,7 +89,7 @@
         }
 
         .register-link a {
-            color: #3498db;
+            color: #1ac5ff;
             text-decoration: none;
         }
     </style>
@@ -98,7 +98,7 @@
 <body>
     <div class="login-container">
         <div class="left-container">
-            <img src="asset/images/hospital.jpg" alt="Login Image">
+            <img src="asset/images/hospital.png" alt="Login Image">
         </div>
         <div class="right-container">
             <div class="login-form">
@@ -137,7 +137,7 @@
                         // Handle login berhasil
                         Swal.fire({
                             icon: 'success',
-                            title: 'Login Berhasil!',
+                            title: 'Berhasil Masuk',
                             text: response.welcome_message,
                             timer: 3000,
                             showConfirmButton: false
@@ -148,7 +148,7 @@
                         // Handle login gagal
                         Swal.fire({
                             icon: 'error',
-                            title: 'Login Gagal',
+                            title: 'Gagal Masuk',
                             text: response.message
                         });
                     }

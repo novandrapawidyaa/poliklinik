@@ -15,7 +15,7 @@ $nama = $_SESSION['nama']; // Ambil nama dari session
         <!-- Brand Logo -->
         <a href="dashboard.php" class="brand-link">
       <img src="asset/images/logo_dinus.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Poliklinik Udinus</span>
+      <span class="brand-text font-weight-light">Udinus Poliklinik</span>
     </a>
 
     <!-- Sidebar -->

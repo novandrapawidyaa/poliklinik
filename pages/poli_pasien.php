@@ -75,7 +75,7 @@
                             <div class="form-group">
                                 <label for="no_rm">Nomor Rekam Medis</label>
                                 <input type="text" class="form-control" id="no_rm" name="no_rm" value="<?= $no_rm ?>"
-                                readonly>
+                                    readonly>
                             </div>
                             <div class="form-group">
                                 <label for="id_poli">Pilih Poli</label>
@@ -214,7 +214,8 @@
                         $('#id_jadwal').empty();
                         $.each(data, function (key, value) {
                             $('#id_jadwal').append('<option value="' + value.id +
-                                '">' + value.hari + ' ' +  value.jam_mulai + '</option>');
+                                '">' + value.hari + ' ' + value.jam_mulai +
+                                '</option>');
                         });
                     },
                     error: function (xhr, status, error) {

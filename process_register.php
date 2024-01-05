@@ -13,57 +13,33 @@ $no_ktp = $_POST['no_ktp'];
 $no_hp = $_POST['no_hp'];
 $no_rm = $_POST['no_rm'];
 
-// Verifikasi apakah data sudah ada dalam database
-$checkQuery = "SELECT * FROM pasien WHERE nama='$nama'";
-$checkResult = mysqli_query($conn, $checkQuery);
+// Check apakah nomor KTP atau nomor HP sudah ada di database
+$check_query = "SELECT * FROM pasien WHERE no_ktp = '$no_ktp' OR no_hp = '$no_hp'";
+$check_result = mysqli_query($conn, $check_query);
 
-if (mysqli_num_rows($checkResult) > 0) {
-    // Jika data nama sudah ada, kirim response error
+if (mysqli_num_rows($check_result) > 0) {
+    // Data sudah ada dalam database, tidak boleh sama
     $response = [
         'success' => false,
-        'message' => 'Registrasi Gagal. Nama sudah terdaftar.'
+        'message' => 'Nomor KTP atau Nomor HP sudah terdaftar. Masukkan nomor yang berbeda.'
     ];
 } else {
-    // Jika data nama belum ada, lanjutkan ke pengecekan no_ktp
-    $checkQuery = "SELECT * FROM pasien WHERE no_ktp='$no_ktp'";
-    $checkResult = mysqli_query($conn, $checkQuery);
+    // Data belum ada dalam database, bisa dilakukan registrasi
+    $query = "INSERT INTO pasien (nama, alamat, no_ktp, no_hp) VALUES ('$nama', '$alamat', '$no_ktp', '$no_hp')";
+    $result = mysqli_query($conn, $query);
 
-    if (mysqli_num_rows($checkResult) > 0) {
-        // Jika data no_ktp sudah ada, kirim response error
+    if ($result) {
+        // Registrasi sukses
         $response = [
-            'success' => false,
-            'message' => 'Registrasi Gagal. Nomor KTP sudah terdaftar.'
+            'success' => true,
+            'message' => 'Registrasi Berhasil! Pasien berhasil terdaftar.'
         ];
     } else {
-        // Jika data no_ktp belum ada, lanjutkan ke pengecekan no_hp
-        $checkQuery = "SELECT * FROM pasien WHERE no_hp='$no_hp'";
-        $checkResult = mysqli_query($conn, $checkQuery);
-
-        if (mysqli_num_rows($checkResult) > 0) {
-            // Jika data no_hp sudah ada, kirim response error
-            $response = [
-                'success' => false,
-                'message' => 'Registrasi Gagal. Nomor HP sudah terdaftar.'
-            ];
-        } else {
-            // Jika semua pengecekan berhasil, lakukan operasi INSERT
-            $query = "INSERT INTO pasien (nama, alamat, no_ktp, no_hp, no_rm) VALUES ('$nama', '$alamat', '$no_ktp', '$no_hp', '$no_rm')";
-            $result = mysqli_query($conn, $query);
-
-            if ($result) {
-                // Registrasi sukses
-                $response = [
-                    'success' => true,
-                    'message' => 'Registrasi Pasien Berhasil! Pasien berhasil terdaftar.'
-                ];
-            } else {
-                // Registrasi gagal
-                $response = [
-                    'success' => false,
-                    'message' => 'Registrasi Pasien Gagal. Terjadi kesalahan. Silakan coba lagi.'
-                ];
-            }
-        }
+        // Registrasi gagal
+        $response = [
+            'success' => false,
+            'message' => 'Registrasi Gagal. Silakan coba lagi.'
+        ];
     }
 }
 

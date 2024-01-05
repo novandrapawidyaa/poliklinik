@@ -16,7 +16,7 @@
         /* Section 1: Navbar */
         .navbar {
             overflow: hidden;
-            background-color: #232ed1;
+            background-color: #4974a5;
             font-family: Arial, sans-serif;
             width: 100%;
             display: flex;
@@ -41,7 +41,7 @@
         /* Section 2: Banner */
         .banner-section {
             font-family: 'Sora', sans-serif;
-            background-color: #232ed1;
+            background-color: #4974a5;
             background-size: cover;
             background-position: center;
             color: #000;
@@ -166,16 +166,16 @@
     <!-- Section 1: Navbar -->
     <section class="navigation-bar">
         <div class="navbar">
-            <a href="#home">Poliklinik Sehat Ambal Waras</a>
+            <a href="#home">Udinus Poliklinik</a>
         </div>
     </section>
 
     <!-- Section 2: Banner -->
     <section class="banner-section">
         <div class="container text-right my-5 fade-in">
-            <h1 style="font-size: 56px;"><b>Sistem Temu Janji</b></h1>
+            <h1 style="font-size: 56px;"><b>SISTEM TEMU JANJI</b></h1>
             <h1 style="font-size: 56px;"><b>Pasien - Dokter</b></h1>
-            <p style="font-size: 22px;">Bimbingan Karir 2023 Bidang Website</p>
+            <p style="font-size: 22px;">Bimbingan Karir - Web Developer</p>
         </div>
     </section>
 
@@ -183,7 +183,7 @@
     <section class="login-section">
         <!-- Left Icon and Text -->
         <div class="col-md-6 icon-container">
-            <img src="asset/images/user.png" alt="First Icon">
+            <img src="asset/images/pasien.jpg" alt="First Icon">
             <h2 style="font-size: 32px;">Login Sebagai Pasien</h2>
             <p>Apabila Anda adalah seorang Pasien, silahkan Login terlebih dahulu untuk melakukan pendaftaran sebagai
                 Pasien!</p>
@@ -192,7 +192,7 @@
 
         <!-- Right Icon and Text -->
         <div class="col-md-6 icon-container">
-            <img src="asset/images/user.png" alt="Second Icon">
+            <img src="asset/images/dokter.jpg" alt="Second Icon">
             <h2 style="font-size: 32px;">Login Sebagai Dokter</h2>
             <p>Apabila Anda adalah seorang Dokter, silahkan Login terlebih dahulu untuk memulai melayani Pasien!</p>
             <a href="controller.php" class="icon-link">Klik Link Berikut -></a>
@@ -204,7 +204,7 @@
         <div class="container">
             <div class="heading_container heading_center">
                 <h2 style="font-size: 32px;">Testimoni Pasien</h2>
-                <p>Para Pasien Yang Setia</p>
+                <p>Pasien yang Kami Cintai</p>
             </div><br><br><br>
             <div class="row">
                 <!-- Customer 1 -->
@@ -212,14 +212,14 @@
                     <div class="box">
                         <div class="profile">
                             <div class="img-box">
-                                <img src="asset/images/testimoni.png" alt="Client 1">
+                                <img src="asset/images/ahmad.jpg" alt="Client 1">
                             </div>
                             <div class="client_info">
-                                <h6>Nopal</h6>
-                                <p>Semarang</p>
+                                <h6 style="font-size: 20px;">Ahmad</h6>
+                                <p>Demak</p>
                             </div>
                         </div>
-                        <p>Pelayanan diweb ini sangat cepat dan mudah, detail histori tercatat lengkap, termasuk catatan obat, harga pelayanan terjangkau, dokter ramah pokoke mantab pol!</p>
+                        <p>Pelayanan terbaik yang pernah saya dapatkan dari poliklinik</p>
                     </div>
                 </div>
                 <!-- Customer 2 -->
@@ -227,14 +227,14 @@
                     <div class="box">
                         <div class="profile">
                             <div class="img-box">
-                                <img src="asset/images/testimoni.png" alt="Client 2">
+                                <img src="asset/images/syafina.jpg" alt="Client 2">
                             </div>
                             <div class="client_info">
-                                <h6>Ilyas</h6>
+                                <h6 style="font-size: 20px;">Syafina</h6>
                                 <p>Semarang</p>
                             </div>
                         </div>
-                        <p>Aku tidak pernah merasakan mudahnya berobat sebelum mengenal web ini, web yang mudah digunakan dan dokter yang terampil membuat berobat menjadi lebih menyenangkan!</p>
+                        <p>Berobat jauh lebih mudah dengan menggunakan website Udinus Poliklinik</p>
                     </div>
                 </div>
             </div>
