@@ -57,8 +57,8 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12">
-                    <h1 class="m-0 text-center">Selamat Datang <b>Dr. Naufal Nabil</b></h1>
-                    <h4 class="m-0 text-center">Saat Ini anda sedang berada di Poliklinik Gigi</h4>
+                    <h1 class="m-0 text-center">Selamat Datang <b>Dr. Kusuma Wardana</b></h1>
+                    <h4 class="m-0 text-center">Saat Ini anda sedang berada di Udinus Poliklinik</h4>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
