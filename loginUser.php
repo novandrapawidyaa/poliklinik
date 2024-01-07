@@ -14,7 +14,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #b4c6d0;
+            background-color: #a6e9a6;
         }
 
         .login-container {
@@ -22,7 +22,7 @@
             max-width: 1200px;
             /* Ubah max-width sesuai kebutuhan */
             background-color: #fff;
-            color: #1a4f76;
+            color: #186218;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -98,40 +98,30 @@
 <body>
     <div class="login-container">
         <div class="left-container">
-            <img src="assets/images/logopalang.png" alt="Login Image">
+            <img src="assets/images/logo_poli.jpg" alt="Login Image">
         </div>
         <div class="right-container">
             <div class="login-form">
-                <br><br><br>
-                <h4 class="text-center">Register </h4>
-                <p class="login-box-msg text-center">Daftarkan diri anda sebagai <span
-                        class="text-primary">Pasien</span> </p>
-                <form action="pages/register/checkRegister.php" method="post">
-                    <label for="nama">Nama :</label>
-                    <input type="text" class="form-control" name="nama" required>
+                <h4 class="text-center">Login </h4>
+                <p class="login-box-msg text-center">Silahkan login sebagai <span class="text-primary">Pasien</span> untuk melanjutkan
+                    <br><br>
+                    <form action="pages/loginUser/checkLoginUser.php" method="post">
+                        <label for="nama">Username :</label>
+                        <input type="text" class="form-control" name="username">
 
-                    <label for="no_hp">Nomor KTP :</label>
-                    <input type="number" class="form-control" name="no_ktp" required>
+                        <label for="no_hp">Password :</label>
+                        <input type="password" class="form-control" name="password" required>
 
-                    <label for="no_hp">Alamat :</label>
-                    <input class="form-control" id="alamat" name="alamat" required></input>
-
-                    <label for="no_hp">Password :</label>
-                    <input type="password" class="form-control" name="password" required>
-
-                    <label for="no_hp">Nomor Handphone :</label>
-                    <input type="number" class="form-control" name="no_hp" required>
-
-                    <button type="submit" class="btn btn-block btn-primary">
-                        Register
-                    </button>
-                </form>
+                        <button type="submit" class="btn btn-block btn-success">
+                            Login
+                        </button>
+                    </form>
 
             </div>
             <div class="text-center mt-3">
                 <p>- Belum punya akun pasien? -</p>
-                <a href="loginUser.php" class="">
-                    Login
+                <a href="register.php" class="">
+                    Register
                 </a>
             </div>
         </div>
