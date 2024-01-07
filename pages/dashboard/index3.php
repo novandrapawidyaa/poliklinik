@@ -122,7 +122,7 @@ if ($result_pasien && $result_dokter && $result_poli && $result_obat) {
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="pasien.php" class="small-box-footer">More info <i
+                        <a href="pasien.php" class="small-box-footer">Info Selanjutnya <i
                                 class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
@@ -133,12 +133,12 @@ if ($result_pasien && $result_dokter && $result_poli && $result_obat) {
                         <div class="inner">
                             <h3><?php echo $jumlah_dokter; ?><sup style="font-size: 20px"></sup></h3>
 
-                            <p>Total Dokter</p>
+                            <p>Jumlah Dokter</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-stats-bars"></i>
                         </div>
-                        <a href="dokter.php" class="small-box-footer">More info <i
+                        <a href="dokter.php" class="small-box-footer">Info Selanjutnya <i
                                 class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
@@ -149,12 +149,12 @@ if ($result_pasien && $result_dokter && $result_poli && $result_obat) {
                         <div class="inner">
                             <h3><?php echo $jumlah_poli; ?></h3>
 
-                            <p>Total Poli</p>
+                            <p>Jenis Poli</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-person-add"></i>
                         </div>
-                        <a href="poli.php" class="small-box-footer">More info <i
+                        <a href="poli.php" class="small-box-footer">Info Selanjutnya <i
                                 class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
@@ -165,12 +165,12 @@ if ($result_pasien && $result_dokter && $result_poli && $result_obat) {
                         <div class="inner">
                             <h3><?php echo $jumlah_obat; ?></h3>
 
-                            <p>Total Jenis Obat</p>
+                            <p>Jenis Obat</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-pie-graph"></i>
                         </div>
-                        <a href="obat.php" class="small-box-footer">More info <i
+                        <a href="obat.php" class="small-box-footer">Info Selanjutnya <i
                                 class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>

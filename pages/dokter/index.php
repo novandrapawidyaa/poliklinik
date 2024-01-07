@@ -191,7 +191,7 @@
                                                     <form action="pages/dokter/hapusDokter.php" method="post">
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>
-                                                        <p>Apakah anda yakin akan menghapus data <span
+                                                        <p>Apakah anda yakin untuk menghapus data dokter?<span
                                                                 class="font-weight-bold"><?php echo $data['nama'] ?></span>
                                                         </p>
                                                         <button type="submit" class="btn btn-danger">Hapus</button>

@@ -14,7 +14,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #a6e9a6;
+            background-color: #517f5a;
         }
 
         .login-container {
@@ -22,7 +22,7 @@
             max-width: 1200px;
             /* Ubah max-width sesuai kebutuhan */
             background-color: #fff;
-            color: #186218;
+            color: #00000;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -76,7 +76,7 @@
         .login-form button {
             width: 100%;
             padding: 10px;
-            background-color: #3498db;
+            background-color: #588163;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -103,7 +103,7 @@
         <div class="right-container">
             <div class="login-form">
                 <h4 class="text-center">Login </h4>
-                <p class="login-box-msg text-center">Silahkan login sebagai <b class="text-success">Dokter</b> untuk melanjutkan</p>
+                <p class="login-box-msg text-center">Lakukan login <b class="text-success">Dokter</b> untuk melayani</p>
                 <br><br>
                 <form action="pages/login/checkLogin.php" method="post">
                     <label for="nama">Username :</label>
@@ -113,13 +113,13 @@
                     <input type="password" class="form-control" name="password" required>
 
                     <button type="submit" class="btn btn-block btn-success">
-                        Login
+                        Masuk
                     </button>
                 </form>
 
             </div>
-            <div class="text-center mt-3">Login Sebagai <a href="loginUser.php"><span
-                        class="text-primary">Pasien</span></a>
+            <div class="text-center mt-3"> <a href="loginUser.php"><span
+                        class="text-primary">Pasien klik disini</span></a>
             </div>
         </div>
     </div>

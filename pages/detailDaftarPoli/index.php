@@ -48,7 +48,7 @@
                                         <?php echo $data['jamMulai'] ?> - <?php echo $data['jamSelesai'] ?></li>
                                 </ul>
                                 <br><br>
-                                <p class="text-muted text-lg"> Obat yang harus dikonsumsi : <br>
+                                <p class="text-muted text-lg"> Obat : <br>
                                     <?php 
                                     $namaObatArray = explode(',', $data['namaObat']);
                                     foreach ($namaObatArray as $index => $namaObat) {

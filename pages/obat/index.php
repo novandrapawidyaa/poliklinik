@@ -162,7 +162,7 @@
                                                     <form action="pages/obat/hapusObat.php" method="post">
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>
-                                                        <p>Apakah anda yakin akan menghapus data <span
+                                                        <p>Apakah anda yakin untuk menghapus data obat? <span
                                                                 class="font-weight-bold"><?php echo $data['nama_obat'] ?></span>
                                                         </p>
                                                         <button type="submit" class="btn btn-danger">Hapus</button>

@@ -27,7 +27,7 @@
         .banner-section {
             font-family: 'Sora', sans-serif;
             background-color: #b4c6d0;
-            color: #fff;
+            color: #00000;
             padding: 10% 0;
             /* Responsive padding */
             text-align: center;
@@ -150,65 +150,46 @@
 </head>
 
 <body>
-    <!-- Section 1: Banner -->
     <section class="banner-section">
-        <div class="container text-right my-5 fade-in">
-            <h1 style="text-align: center; font-size: 30px;"><b>Kesehatan Anda Kebahagiaan Kami</b></h1>
-            <p style="text-align: center; font-size: 20px;">Kami Siap Melayani Kesehatan Mahasiswa dan Staf Udinus dengan Hati</p>
-        </div>
+        <h1>Kesehatan Anda Kebahagiaan Kami</h1>
+        <p>Kami Siap Melayani Kesehatan Mahasiswa dan Staf Udinus dengan Hati</p>
     </section>
 
-    <!-- Section 2: Floating Container -->
-    <section class="floating-container">
-        <div class="container mt-3 mb-2">
-            <div class="row floating-word">
-                <div class="col-md-4 col-lg-3">
-                    <div class="text-center mt-3">
-                        <img style="max-height: 100px" src="assets/images/icon3.png" alt="Logo">
-                        <p class="mt-5">Kami akan memberikan fasilitas terbaik.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="text-center mt-3">
-                        <img style="max-height: 100px" src="assets/images/icon2.png" alt="Logo">
-                        <p class="mt-5">Kami akan memberikan Dokter terbaik.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="text-center mt-3 banner3">
-                        <img style="max-height: 100px" src="assets/images/icon1.png" alt="Logo">
-                        <p class="mt-5">Kami akan memberikan pelayanan terbaik.</p>
-                    </div>
-                </div>
+    <!-- Tambahkan div yang diminta di sini -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div style="background-image: url('assets/images/gedung.jpg'); background-size: cover; height: 200px; position: relative;">
+                <marquee style="position: absolute; bottom: 0; background-color: rgba(0,0,0,0.5); color: white; width: 100%; padding: 10px;">
+                    Pakai Masker - Tetap Jaga Protokol Kesehatan!
+                </marquee>
             </div>
-        </div>
-    </section> <br><br><br>
-
-    <section class="video-section">
-        <div class="container my-5">
-            <!-- Tagline -->
-            <div class="tagline text-center">
-                <p style="font-size: 24px; font-weight: bold; color: #51604F;">Kesehatan Nomor <span
-                        style="color: #661b2b; font-size: 28px;">Satu</span> cuma di <span
-                        style="color: #661b2b; font-size: 28px;">Udinus Poliklinik</span></p>
-            </div>
-        </div>
-
-        <!-- Section 3: Video and Greetings -->
-        <div class="container my-5 greeting">
-            <div class="row align-items-center">
-                <!-- Image left, text right -->
-                <div class="col-md-6 order-2 order-md-1">
-                    <img src="asset/images/hospital1.jpg" alt="" style="width: 100%; height: auto;">
-                </div>
-                <div class="col-md-6 order-1 order-md-2 mb-4">
-                    <h2>Selamat Datang di Udinus Poliklinik</h2>
-                    <p>Kami berkomitmen untuk memberikan layanan kesehatan berkualitas tinggi kepada komunitas Universitas Dian Nuswantoro. Temukan solusi kesehatan terbaik bersama kami.</p>
-                </div>
-            </div>
+    <section class="list-section">
+        <div class="list-container">
+            <h2 style="text-align: center;">Layanan Kami</h2>
+            <ul class="service-list">
+                <li>
+                    <i class="icon fas fa-stethoscope"></i>
+                    <span class="service-text">Layanan Medis Umum</span>
+                </li>
+                <li>
+                    <i class="icon fas fa-user-md"></i>
+                    <span class="service-text">Pemeriksaan Spesialis</span>
+                </li>
+                <li>
+                    <i class="icon fas fa-hospital"></i>
+                    <span class="service-text">Fasilitas Kesehatan Modern</span>
+                </li>
+                <li>
+                    <i class="icon fas fa-comments"></i>
+                    <span class="service-text">Konsultasi Kesehatan</span>
+                </li>
+                <li>
+                    <i class="icon fas fa-heartbeat"></i>
+                    <span class="service-text">Program Kesehatan Preventif</span>
+                </li>
+            </ul>
         </div>
     </section>
-
 </body>
 
 </html>

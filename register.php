@@ -22,7 +22,7 @@
             max-width: 1200px;
             /* Ubah max-width sesuai kebutuhan */
             background-color: #fff;
-            color: #1a4f76;
+            color: #000000;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -76,7 +76,7 @@
         .login-form button {
             width: 100%;
             padding: 10px;
-            background-color: #3498db;
+            background-color: #588163;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -89,7 +89,7 @@
         }
 
         .register-link a {
-            color: #3498db;
+            color: #588163;
             text-decoration: none;
         }
     </style>
@@ -103,8 +103,8 @@
         <div class="right-container">
             <div class="login-form">
                 <br><br><br>
-                <h4 class="text-center">Register </h4>
-                <p class="login-box-msg text-center">Daftarkan diri anda sebagai <span
+                <h4 class="text-center">Registrasi Disini </h4>
+                <p class="login-box-msg text-center">Data Diri <span
                         class="text-primary">Pasien</span> </p>
                 <form action="pages/register/checkRegister.php" method="post">
                     <label for="nama">Nama :</label>
@@ -123,13 +123,13 @@
                     <input type="number" class="form-control" name="no_hp" required>
 
                     <button type="submit" class="btn btn-block btn-primary">
-                        Register
+                        Buat Akun
                     </button>
                 </form>
 
             </div>
             <div class="text-center mt-3">
-                <p>- Belum punya akun pasien? -</p>
+                <p>Sudah punya akun?</p>
                 <a href="loginUser.php" class="">
                     Login
                 </a>

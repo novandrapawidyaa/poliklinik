@@ -105,35 +105,36 @@
 </head>
 
 <body class="hold-transition login-page">
-    <div class="container-fluid flex flex-col justify-center items-center text-white p-5"
-        style="height: 400px; background-color: #b4c6d0;">
-        <h1 class="font-weight-bold mb-3">Sistem Temu Janji Pasien - Dokter</h1>
-        <h5>
-            Bimbingan Karir 2023 Web Developer
-        </h5>
-    </div>
+<div class="container-fluid flex flex-col justify-center items-center text-white p-5"
+     style="height: 400px; background-image: url('assets/images/gedung1.png'); background-size: cover; background-position: center; position: relative;">
+     <h1 class="font-weight-bold mb-3" style="color: black;">Udinus Poliklinik</h1>
+     <h5 style="color: black; font-weight: bold;">
+    Sistem Informasi Layanan Kesehatan
+</h5>
+    <marquee style="position: absolute; bottom: 0; background-color: rgba(0,0,0,0.5); color: white; width: 100%; padding: 10px;">
+        Pakai Masker - Tetap Jaga Protokol Kesehatan!
+    </marquee>
+</div>
     <div class="container mt-5">
         <div class="row justify-content-lg-center">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <i class="fas fa-user fa-fw mb-3 text-primary" style="font-size: 34px;"></i>
+                        <i class="fas fa-hospital-user fa-fw mb-3 text-primary" style="font-size: 34px;"></i>
                         <h3 class="">Pasien</h3>
-                        <p class="card-text">Apabila anda adalah seorang Pasien, Silahkan Login terlebih dahulu untuk
-                            melakukan pendaftaran sebagai pasien</p>
-                        <a href="loginUser.php" class="btn btn-primary btn-block">Login Sebagai Pasien</a>
+                        <p class="card-text">Untuk mendapatkan layanan kesehatan dari Udinus Poliklinik, silahkan login terlebih dahulu</p>
+                        <a href="loginUser.php" class="btn btn-primary btn-block">Masuk</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <i class="fas fa-user-nurse fa-fw mb-3 text-success" style="font-size: 34px;"></i>
+                        <i class="fas fa-stethoscope fa-fw mb-3 text-success" style="font-size: 34px;"></i>
                         <h3 class="">Dokter</h3>
-                        <p class="card-text">Apabila anda adalah seorang Dokter, silahkan Login terlebih dahulu untuk
-                            memulai melayani pasien</p>
+                        <p class="card-text">Untuk memulai melayani pasien di Udinus Poliklinik, silahkan login terlebih dahulu</p>
                         <div class="d-grid">
-                            <a href="login.php" class="btn btn-success btn-block">Login Sebagai Dokter</a>
+                            <a href="login.php" class="btn btn-success btn-block">Masuk</a>
                         </div>
                     </div>
                 </div>
@@ -143,8 +144,7 @@
         <section class="client_section layout_padding">
     <div class="container">
         <div class="heading_container heading_center">
-            <h2>Testimoni Pasien</h2>
-            <p>Para Pasien yang Kami Cintai</p>
+            <h2>Testimoni Pelayanan</h2>
         </div>
         <!-- Customer 1 -->
         <div class="testimonial-card my-4">
