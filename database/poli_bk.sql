@@ -87,7 +87,7 @@ CREATE TABLE `dokter` (
 --
 
 INSERT INTO `dokter` (`id`, `nama`, `password`, `alamat`, `no_hp`, `id_poli`) VALUES
-(12, 'Kusuma Wardana', 'eee462bf8b460595e91b5aab19fd61c2', 'Jl. Terus No.5 RT10/01', '085678876543', 11),
+(12, 'Dr. Kusuma Wardana', 'eee462bf8b460595e91b5aab19fd61c2', 'Jl. Terus No.5 RT10/01', '085678876543', 11),
 (13, 'Andra', '839ddfea673b23c89c87ca5bfd74ac3c', 'Jl. Ramai sekali', '08907524675678', 21),
 (16, 'Novan', '0c646b9d777ee31b005228bdc3d469a1', 'Jl. Raya No.7', '089456543456', 11),
 (19, 'budi', '00dfc53ee86af02e742515cdcf075ed3', 'Jl. Simpang 5', '089234567', 22);
